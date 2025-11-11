@@ -13,7 +13,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/routes") // All URLs in this file start with /api/v1/routes
-@CrossOrigin(origins = "*") // Allows your front-end to call this API
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://www.sajiloyatra.me",
+        "https://sajiloyatra-frontend.vercel.app"
+})// Allows your front-end to call this API
 public class PlannedRouteController {
 
     @Autowired

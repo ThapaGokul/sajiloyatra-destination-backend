@@ -12,7 +12,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/hotels")
-@CrossOrigin(origins = "*") // Allows your front-end to call this
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://www.sajiloyatra.me",
+        "https://sajiloyatra-frontend.vercel.app"
+}) // Allows your front-end to call this
 public class HotelController {
 
     @Autowired

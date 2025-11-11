@@ -18,7 +18,11 @@ import java.util.Optional;
 
 // ADD THIS ANNOTATION
 // This tells Spring Boot to allow requests from any origin (*).
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://www.sajiloyatra.me",
+        "https://sajiloyatra-frontend.vercel.app"
+})
 @RestController
 @RequestMapping("/api/v1/destinations")
 public class DestinationController {
