@@ -16,7 +16,7 @@ import java.util.Optional;
 @CrossOrigin(origins = {
         "http://localhost:3000",
         "https://www.sajiloyatra.me",
-        "https://sajiloyatra-frontend.vercel.app"
+        "https://sajiloyatra-frontend-git-main-thapagokuls-projects.vercel.app"
 })// Allows your front-end to call this API
 public class PlannedRouteController {
 
