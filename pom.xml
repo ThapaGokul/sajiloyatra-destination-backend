@@ -54,6 +54,12 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 		<!-- ADDED: For development, auto-restarts the app on changes -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
